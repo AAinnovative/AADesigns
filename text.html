@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>Project Designs</title>
+
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        background: #252839;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    h1 {
+        position: relative;
+        font-size: 5vh;
+        color: #252839;
+        -webkit-text-stroke: 1.5px #383d52;
+        text-transform: capitalize;
+    }
+    
+    h1 {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 30%;
+        color: #01fe87;
+        -webkit-text-stroke: 0vw #383d52;
+        border-right: 2px solid purple;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+    }
+    
+    @keyframes animate {
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+        70%,
+        90% {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="home">
+        <div class="head">
+
+            <h1>INNOVATIVE<br> PRESENTATIONS<br>BY<br> DESIGNS<b>AA</b></h1>
+        </div>
+</body>
+
+</html>

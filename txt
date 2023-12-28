@@ -1,0 +1,26 @@
+#ol2 {
+            display: flex;
+            padding: 10px 5px;
+        }
+        #li2 {
+            display: inline-block;
+            font-size: 30px;
+            padding: 10px 30px;
+            display: contents;
+        }
+        #ol2 #li2 {
+            margin: 0 50px;
+        }
+        #ol2 #li2 #a2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 40%;
+            text-align: center;
+            padding: 5px 50px;
+            font-size: 10px;
+            border-radius: 15px;
+            left: -40%;
+            transform: translateX(-50%);
+            position: relative;
+        }

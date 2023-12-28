@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>Project Designs</title>
+
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <script src="main.js"></script>
+
+</head>
+
+<style>
+    /*Whole html design */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Raleway, Arial;
+    }
+    /*Body designing */
+    
+    body {
+        background: white;
+        overflow: hidden;
+    }
+    /*nav box design */
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*class nbar box+font  design */
+    
+    .nbar {
+        font-size: 17px;
+        font-weight: 800;
+        cursor: pointer;
+        color: rgb(121, 121, 170);
+        padding: 10px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*class nbar bold color design */
+    
+    .nbar b {
+        color: purple;
+    }
+    /*list design */
+    
+    ol {
+        display: flex;
+        margin: auto 0;
+        list-style: none;
+    }
+    /*Whole html design */
+    
+    ol li {
+        margin: 0 10px;
+    }
+    /*attributes ,font ,box ,color design */
+    
+    ol li a {
+        font-size: 20px;
+        color: rgb(179, 111, 179);
+        text-transform: capitalize;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 8px 12px;
+        border: 1px solid rgb(224, 162, 224);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*attribute transitions design */
+    
+    a {
+        transition-property: margin-right rgb(179, 71, 179);
+        transition-duration: 1s;
+    }
+    /*ATT transition using ol il */
+    
+    ol li:hover a,
+    ol li :focus a {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    ol li:hover #home1,
+    ol li :focus #home1 {
+        color: rgb(174, 0, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    #home1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    .bar {
+        position: relative;
+        display: none;
+    }
+    
+    .bar span {
+        color: purple;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 17px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    
+    .tbg {
+        width: 100%;
+        height: 100%;
+        margin-top: 0%;
+        margin-bottom: 10px;
+        margin-left: 0%;
+        background-image: url("Totalbg.png");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+    
+    .home {
+        width: 70%;
+        height: 50%;
+        margin-top: 10%;
+        margin-left: 45%;
+        background-image: url("home.jpg");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+    
+    h1 {
+        position: relative;
+        font-size: 5vh;
+        color: #252839;
+        -webkit-text-stroke: 1.5px #383d52;
+        text-transform: capitalize;
+    }
+    
+    h1 {
+        content: attr(data-text);
+        position: absolute;
+        top: 20%;
+        left: -20%;
+        width: 0;
+        height: 50%;
+        color: #cc00ff;
+        -webkit-text-stroke: 0vw #383d52;
+        border-right: 2px solid purple;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+    }
+    
+    @keyframes animate {
+        0%,
+        10%,
+        100% {
+            width: 0%;
+        }
+        70%,
+        90% {
+            width: 30%;
+        }
+    }
+    
+    b {
+        color: rgb(95, 0, 95);
+    }
+    
+    @media screen and (max-width:800px) {
+        nav {
+            display: block;
+            padding: 0;
+        }
+        .nbar {
+            display: inline-block;
+            margin: 20px 50px;
+        }
+        ol {
+            display: block;
+            width: 100%;
+        }
+        ol li {
+            position: relative;
+            margin: 40px 0;
+            display: none;
+        }
+        ol li a {
+            width: 90%;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+            display: block;
+            border-radius: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+        .bar {
+            display: block;
+            position: absolute;
+            top: 08px;
+            right: 80px;
+            cursor: pointer;
+        }
+        .bar #times {
+            color: rgb(226, 117, 184);
+            display: none;
+        }
+        #check:checked~nav ol li {
+            display: block;
+        }
+        #check:checked~nav .bar #times {
+            display: block;
+        }
+        #check:checked~nav .bar #bars {
+            display: block;
+        }
+        .home {
+            width: 40%;
+            height: 30%;
+            margin-top: 50%;
+            margin-left: 50%;
+            background-image: url("home.jpg");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        h1 {
+            position: relative;
+            font-size: 2.5vh;
+            line-height: 30px;
+            color: #252839;
+            -webkit-text-stroke: 1.5px #383d52;
+            text-transform: capitalize;
+        }
+        h1 {
+            content: attr(data-text);
+            position: absolute;
+            top: 20%;
+            right: 100%;
+            left: -100%;
+            width: 0;
+            height: 50%;
+            color: #cc00ff;
+            -webkit-text-stroke: 0vw #383d52;
+            border-right: 2px solid purple;
+            overflow: hidden;
+            animation: animate 6s linear infinite;
+        }
+        @keyframes animate {
+            0%,
+            10%,
+            100% {
+                width: 0%;
+            }
+            70%,
+            90% {
+                width: 100%;
+            }
+        }
+        b {
+            color: rgb(54, 0, 54);
+        }
+    }
+</style>
+
+<body>
+    <input type="checkbox" id="check">
+
+    <nav style="position: relative;">
+        <div class="nbar">Designs<b>AA</b></div>
+
+        <ol>
+            <li><a id="home1" href="#" class="ha">Home</a> </li>
+            <li><a href="http://localhost:3000/auth/google">G Login</a> </li>
+            <li><a href="#" class="da">Designs</a> </li>
+            <li><a href="#" class="aa">About</a> </li>
+        </ol>
+
+        <label for="check" class="bar">
+            <span class="fas fa-bars" id="bars"></span>
+            <span class="fas fa-times" id="times"></span>
+        </label>
+    </nav>
+
+    <div class="tbg">
+        <div class="home">
+            <div class="head">
+
+
+                <h1>INNOVATIVE<br> PRESENTATIONS<br>BY<br> DESIGNS<b>AA</b></h1>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
